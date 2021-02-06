@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #00539c;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+    <children>
+        <Button fx:id="adminbutton" layoutX="417.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: #FFD662; -fx-border-width: 0px 0px 2px 0px;" text="." textFill="#00539c" />
+      <TableView fx:id="table" layoutX="583.0" layoutY="103.0" prefHeight="255.0" prefWidth="401.0" stylesheets="@Style.css">
+        <columns>
+          <TableColumn fx:id="colmodule" editable="false" prefWidth="100.0" sortable="false" text="Module" />
+          <TableColumn fx:id="coldate" editable="false" prefWidth="100.0" sortable="false" text="Date" />
+            <TableColumn fx:id="colstime" editable="false" prefWidth="100.0" sortable="false" text="Start Time" />
+            <TableColumn fx:id="colfill" editable="false" prefWidth="100.0" sortable="false" text="Filliere" />
+            <TableColumn fx:id="colid" editable="false" prefWidth="100.0" sortable="false" text="ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="Deletebutton" layoutX="457.0" layoutY="231.0" mnemonicParsing="false" text="Refuse" />
+      <Button fx:id="Validatebutton" layoutX="371.0" layoutY="231.0" mnemonicParsing="false" onAction="#Update" text="Valide" />
+      <TextField fx:id="textField" layoutX="360.0" layoutY="182.0" onKeyPressed="#Activatebuttons" prefHeight="25.0" prefWidth="158.0" />
+    </children>
+</AnchorPane>
